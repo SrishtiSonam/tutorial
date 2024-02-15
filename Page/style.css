@@ -3,7 +3,7 @@ ul i:before, ul i:after, p {
 }
 
 ul li, h1 {
-  animation: flipdown 0.5s ease both;
+  animation: flipdown 10s ease both;
 }
 
 @keyframes flipdown {
@@ -41,24 +41,24 @@ html {
 
 body {
   min-height: 0;
+  max-width: 450px;
   display: inline-block;
   position: relative;
   left: 50%;
   margin: 90px 0;
+  padding: 30px;
+  background-color: rgb(254, 255, 250);
   transform: translate(-50%, 0);
   box-shadow: 0 10px 0 0 rgb(255, 104, 115) inset;
-  background-color: rgb(254, 255, 250);
-  max-width: 450px;
-  padding: 30px;
 }
 @media (max-width: 550px) {
   body {
-    box-sizing: border-box;
-    transform: translate(0, 0);
+    left: 0;
+    margin: 0;
     max-width: 100%;
     min-height: 100%;
-    margin: 0;
-    left: 0;
+    box-sizing: border-box;
+    transform: translate(0, 0);
   }
 }
 
@@ -67,18 +67,18 @@ h1, h2 {
 }
 
 h1 {
-  text-transform: uppercase;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 3px;
   font-weight: 100;
+  text-transform: uppercase;
   animation-delay: 0.5s;
 }
 
 h2 {
   font-size: 26px;
-  line-height: 34px;
   font-weight: 300;
+  line-height: 34px;
   letter-spacing: 1px;
   display: block;
   background-color: rgb(254, 255, 250);
